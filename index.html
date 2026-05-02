@@ -1,899 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aabith. Z | Generative AI Analyst</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aabith. Z — AI Product Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+  <!-- Grain Overlay -->
+  <div class="grain"></div>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div id="particles-js"></div>
-
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="logo">
-          <span class="logo-text"></span>
-          <span class="logo-full">AABITH. Z</span>
-        </div>
-        <div class="nav-links">
-          <a href="#home" class="active">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="menu-btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">AZ</a>
+      <div class="nav__links" id="navLinks">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#contact" class="nav__link">Contact</a>
       </div>
-    </nav>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <section id="home" class="hero">
-      <div class="hero-container">
-        <div class="hero-content">
-          <span class="hero-tag">GENERATIVE AI ANALYST</span>
-          <h1 class="hero-title">
-            <span class="title-line">Aabith</span>
-            <span class="title-line accent"></span>
-          </h1>
-          <p class="hero-description">
-            Translating business questions into structured AI workflows.
-            Combining analytical experience with applied experimentation in
-            generative AI.
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero__inner">
+      <div class="hero__meta reveal">
+        <span class="hero__status">
+          <span class="pulse-dot"></span>
+          Available for opportunities
+        </span>
+      </div>
+      <h1 class="hero__name reveal delay-1">
+        <span class="hero__name-line">Aabith</span>
+        <span class="hero__name-line hero__name-line--italic">Z.</span>
+      </h1>
+      <div class="hero__role reveal delay-2">
+        <span class="hero__role-text">AI Product Analyst</span>
+        <span class="hero__sep">·</span>
+        <span class="hero__role-text">SaaS Builder</span>
+        <span class="hero__sep">·</span>
+        <span class="hero__role-text">Generative AI</span>
+      </div>
+      <p class="hero__bio reveal delay-3">
+        Building and analyzing AI-powered production systems.<br />
+        Translating data into decisions, pipelines into products.
+      </p>
+      <div class="hero__actions reveal delay-4">
+        <a href="#projects" class="btn btn--primary">View Work</a>
+        <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero__scroll reveal delay-4">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+    <div class="hero__photo reveal delay-2">
+      <div class="hero__photo-frame">
+        <img src="profile.jpeg" alt="Aabith. Z" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section__label reveal">
+        <span class="section__num">01</span>
+        <span class="section__title">About</span>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p class="about__lead">
+            I build SaaS platforms, integrate AI agents, and then study them like an analyst — understanding what the data reveals about user behavior, system performance, and business outcomes.
           </p>
-          <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">
-              View Projects
-              <i class="fas fa-arrow-right"></i>
-            </a>
-            <a href="#contact" class="btn btn-outline"> Contact Me </a>
-          </div>
-          <div class="hero-social">
-            <a href="#" class="social-link" aria-label="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-photo">
-          <div class="photo-frame">
-            <img src="profile.jpeg" alt="Aabith. Z" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-subtitle">ABOUT ME</span>
-          <h2 class="section-title">Professional Summary</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-card">
-            <div class="card-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <h3>Experience</h3>
-            <p>Client Solutions Intern at Semms Solutions</p>
-            <div class="stat">
-              <span class="stat-number">15+</span>
-              <span class="stat-label">Client Accounts</span>
-            </div>
-          </div>
-
-          <div class="about-card">
-            <div class="card-icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3>AI Projects</h3>
-            <p>4 Applied Generative AI Projects</p>
-            <div class="stat">
-              <span class="stat-number">4</span>
-              <span class="stat-label">Case Studies</span>
-            </div>
-          </div>
-
-          <div class="about-card">
-            <div class="card-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <h3>Learning</h3>
-            <p>Infosys Springboard - Gen AI Track</p>
-            <div class="stat">
-              <span class="stat-number">5</span>
-              <span class="stat-label">Learning Areas</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-text">
-          <p>
-            Analytical professional with experience in client solutions, data
-            analysis, and operational reporting. Currently expanding expertise
-            in generative AI through structured learning and applied projects.
-            Works with LLM APIs, Python, and Streamlit to build practical AI
-            tools that address business needs.
+          <p class="about__body">
+            Currently interning as Product Analyst at Semms Solutions, where I solely built and deployed S-Network — a full-scale construction industry discovery platform — and now analyze it end-to-end. I've completed BI training via IBM Cognos Analytics and am progressing through Anthropic's official AI certification.
           </p>
-          <p>
-            Combines foundational knowledge of data analysis with emerging
-            competencies in prompt engineering, model comparison, and
-            AI-assisted development. Focused on applying generative AI to
-            business problems with attention to accuracy and responsible
-            implementation.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-subtitle">EXPERTISE</span>
-          <h2 class="section-title">Core Skills</h2>
+          <div class="about__links">
+            <a href="https://linkedin.com/in/aabith2004" target="_blank" class="about__social">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="https://github.com/AabithAhmed" target="_blank" class="about__social">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
         </div>
 
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h3>Analytical & Business</h3>
-            <ul class="skill-list">
-              <li>Client requirements analysis</li>
-              <li>Sales & operations reporting</li>
-              <li>Performance trend identification</li>
-              <li>Structured report preparation</li>
-              <li>Business-to-technical translation</li>
-            </ul>
+        <div class="about__stats reveal delay-1">
+          <div class="stat">
+            <span class="stat__num">3</span>
+            <span class="stat__label">Internships<br/>Completed</span>
           </div>
-
-          <div class="skill-card">
-            <h3>Generative AI</h3>
-            <ul class="skill-list">
-              <li>Prompt engineering & structuring</li>
-              <li>LLM API integration</li>
-              <li>Model comparison fundamentals</li>
-              <li>JSON output enforcement</li>
-              <li>AI ethics & responsible AI</li>
-            </ul>
+          <div class="stat">
+            <span class="stat__num">15+</span>
+            <span class="stat__label">Clients<br/>Handled</span>
           </div>
-
-          <div class="skill-card">
-            <h3>Technical</h3>
-            <ul class="skill-list">
-              <li>Python (intermediate)</li>
-              <li>Streamlit development</li>
-              <li>Spreadsheet analysis</li>
-              <li>AI-assisted development</li>
-              <li>Basic model evaluation</li>
-            </ul>
+          <div class="stat">
+            <span class="stat__num">5+</span>
+            <span class="stat__label">AI Projects<br/>Shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">1</span>
+            <span class="stat__label">Live SaaS<br/>Platform</span>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="experience">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-subtitle">BACKGROUND</span>
-          <h2 class="section-title">Professional Experience</h2>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">2024</span>
-              <h3>Semms Solutions</h3>
-              <h4>Client Solutions & Data Analysis Intern</h4>
-              <p class="timeline-context">
-                Internship focused on client account management and operational
-                reporting using spreadsheet-based tools. No enterprise BI
-                platforms used.
-              </p>
-              <ul class="timeline-list">
-                <li>Managed coordination for 15 client accounts</li>
-                <li>Handled sales & operations reporting</li>
-                <li>Analyzed data to identify performance trends</li>
-                <li>Prepared structured client reports</li>
-                <li>Translated business requirements to technical tasks</li>
-              </ul>
-              <div class="timeline-tags">
-                <span>Excel</span>
-                <span>Spreadsheets</span>
-                <span>Manual Analysis</span>
-              </div>
-            </div>
+      <!-- Skills -->
+      <div class="skills reveal">
+        <div class="skills__group">
+          <h4 class="skills__heading">AI & Machine Learning</h4>
+          <div class="skills__tags">
+            <span>Claude API</span><span>Multi-Agent AI</span><span>Prompt Engineering</span>
+            <span>XGBoost</span><span>SHAP</span><span>LLM Integration</span><span>Model Evaluation</span>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-subtitle">PORTFOLIO</span>
-          <h2 class="section-title">AI Projects</h2>
-        </div>
-
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-header">
-              <i class="fas fa-chart-bar project-icon"></i>
-              <h3>InsightIQ</h3>
-            </div>
-            <p class="project-subtitle">AI-Assisted EDA & Model Prototyping</p>
-            <div class="project-tags">
-              <span>Python</span>
-              <span>Streamlit</span>
-              <span>scikit-learn</span>
-            </div>
-            <button class="project-toggle">
-              <span>View Case Study</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="project-details">
-              <div class="detail-block">
-                <h4>Problem</h4>
-                <p>
-                  Business analysts need quick ways to explore datasets and
-                  compare ML models without extensive coding.
-                </p>
-              </div>
-              <div class="detail-block">
-                <h4>Solution</h4>
-                <p>
-                  Streamlit app automating EDA with multi-model comparison (LR,
-                  RF, XGBoost) and SHAP explanations.
-                </p>
-              </div>
-              <div class="detail-block limitations">
-                <h4>Limitations</h4>
-                <ul>
-                  <li>Structured tabular data only</li>
-                  <li>Limited hyperparameter tuning</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <i class="fas fa-chart-line project-icon"></i>
-              <h3>AI Sales Insight Generator</h3>
-            </div>
-            <p class="project-subtitle">
-              Business Intelligence Through Prompting
-            </p>
-            <div class="project-tags">
-              <span>Python</span>
-              <span>LLM API</span>
-              <span>Prompt Eng</span>
-            </div>
-            <button class="project-toggle">
-              <span>View Case Study</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="project-details">
-              <div class="detail-block">
-                <h4>Problem</h4>
-                <p>
-                  Sales teams lack quick ways to extract meaningful business
-                  insights from data.
-                </p>
-              </div>
-              <div class="detail-block">
-                <h4>Solution</h4>
-                <p>
-                  Tool processes sales CSV data and generates structured
-                  insights using LLM prompts.
-                </p>
-              </div>
-              <div class="detail-block limitations">
-                <h4>Limitations</h4>
-                <ul>
-                  <li>Not a forecasting tool</li>
-                  <li>Output depends on data quality</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <i class="fas fa-tasks project-icon"></i>
-              <h3>Prompt Optimization Study</h3>
-            </div>
-            <p class="project-subtitle">
-              Comparative Analysis of Prompting Strategies
-            </p>
-            <div class="project-tags">
-              <span>LLM API</span>
-              <span>Python</span>
-              <span>Research</span>
-            </div>
-            <button class="project-toggle">
-              <span>View Case Study</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="project-details">
-              <div class="detail-block">
-                <h4>Study Design</h4>
-                <p>
-                  Compared zero-shot, few-shot, and structured prompts across 5
-                  business scenarios.
-                </p>
-              </div>
-              <div class="detail-block">
-                <h4>Findings</h4>
-                <ul>
-                  <li>Structured prompts: most consistent</li>
-                  <li>Few-shot: improved domain relevance</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <i class="fas fa-file-alt project-icon"></i>
-              <h3>AI Business Report Summarizer</h3>
-            </div>
-            <p class="project-subtitle">Structured Information Extraction</p>
-            <div class="project-tags">
-              <span>Python</span>
-              <span>Streamlit</span>
-              <span>JSON</span>
-            </div>
-            <button class="project-toggle">
-              <span>View Case Study</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="project-details">
-              <div class="detail-block">
-                <h4>Problem</h4>
-                <p>
-                  Professionals spend too much time reading lengthy reports.
-                </p>
-              </div>
-              <div class="detail-block">
-                <h4>Solution</h4>
-                <p>
-                  Extracts KPIs, risks, and insights using structured prompts
-                  with JSON output.
-                </p>
-              </div>
-            </div>
+        <div class="skills__group">
+          <h4 class="skills__heading">Data & Analytics</h4>
+          <div class="skills__tags">
+            <span>PostgreSQL</span><span>Supabase</span><span>SQL</span><span>Pandas</span>
+            <span>IBM Cognos</span><span>KPI Analysis</span><span>Cohort Analysis</span><span>BI Dashboards</span>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="learning">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-subtitle">EDUCATION</span>
-          <h2 class="section-title">Learning Journey</h2>
-        </div>
-
-        <div class="learning-grid">
-          <div class="learning-card">
-            <i class="fas fa-graduation-cap card-icon-large"></i>
-            <h3>Infosys Springboard</h3>
-            <p class="learning-status">
-              Generative AI Learning Track (Currently Enrolled)
-            </p>
-            <ul class="learning-list">
-              <li><i class="fas fa-circle"></i> Generative AI fundamentals</li>
-              <li><i class="fas fa-circle"></i> LLM architecture basics</li>
-              <li>
-                <i class="fas fa-circle"></i> Prompt engineering techniques
-              </li>
-              <li><i class="fas fa-circle"></i> AI ethics & responsible AI</li>
-            </ul>
-          </div>
-
-          <div class="learning-card">
-            <i class="fas fa-book-open card-icon-large"></i>
-            <h3>Self-Directed Learning</h3>
-            <ul class="learning-list">
-              <li><i class="fas fa-circle"></i> Python for data analysis</li>
-              <li><i class="fas fa-circle"></i> Streamlit documentation</li>
-              <li><i class="fas fa-circle"></i> LLM API integration guides</li>
-              <li>
-                <i class="fas fa-circle"></i> Prompt engineering best practices
-              </li>
-            </ul>
+        <div class="skills__group">
+          <h4 class="skills__heading">Cloud & Systems</h4>
+          <div class="skills__tags">
+            <span>Google Cloud</span><span>OAuth 2.0</span><span>Vercel</span><span>Render</span>
+            <span>VPS / Nginx</span><span>PM2</span><span>Edge Functions</span>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-subtitle">CONNECT</span>
-          <h2 class="section-title">Get In Touch</h2>
-        </div>
-
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h3>Aabith Ahmed</h3>
-            <p class="contact-title">Generative AI Analyst (Early Career)</p>
-
-            <div class="contact-details">
-              <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>aabith.ahmed@email.com</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>+1 (234) 567-890</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>City, Country</span>
-              </div>
-            </div>
-
-            <div class="contact-social">
-              <a href="#" class="social-link"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            </div>
+        <div class="skills__group">
+          <h4 class="skills__heading">Development</h4>
+          <div class="skills__tags">
+            <span>Angular 17 SSR</span><span>Flutter</span><span>Python</span>
+            <span>Node.js</span><span>TypeScript</span><span>Streamlit</span><span>REST APIs</span>
           </div>
-
-          <div class="contact-form">
-            <form id="contactForm">
-              <div class="form-group">
-                <input type="text" placeholder="Your Name" required />
-              </div>
-              <div class="form-group">
-                <input type="email" placeholder="Your Email" required />
-              </div>
-              <div class="form-group">
-                <textarea
-                  placeholder="Your Message"
-                  rows="4"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                Send Message
-                <i class="fas fa-paper-plane"></i>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container">
-        <p>© 2024 Aabith Ahmed. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <div class="chatbot-widget">
-      <div class="chatbot-toggle">
-        <i class="fas fa-robot"></i>
-      </div>
-      <div class="chatbot-container">
-        <div class="chatbot-header">
-          <div class="chatbot-title">
-            <i class="fas fa-brain"></i>
-            <span>AI Assistant (Groq Llama 3)</span>
-          </div>
-          <button class="chatbot-close"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="chatbot-messages" id="chatMessages">
-          <div class="message bot">
-            <div class="message-content">
-              Hi! I'm powered by Groq's Llama 3. Ask me anything about Aabith's
-              skills, projects, or experience!
-            </div>
-          </div>
-        </div>
-        <div class="chatbot-input-area">
-          <input
-            type="text"
-            id="userInput"
-            placeholder="Ask me something..."
-            autocomplete="off"
-          />
-          <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
-        </div>
-        <div class="chatbot-suggestions">
-          <button class="suggestion-chip">What are your skills?</button>
-          <button class="suggestion-chip">Tell me about InsightIQ</button>
-          <button class="suggestion-chip">Experience</button>
-          <button class="suggestion-chip">Education</button>
         </div>
       </div>
     </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-      // Particles.js Configuration
-      particlesJS("particles-js", {
-        particles: {
-          number: { value: 80, density: { enable: true, value_area: 800 } },
-          color: { value: "#4A90E2" },
-          shape: { type: "circle" },
-          opacity: { value: 0.3, random: true },
-          size: { value: 3, random: true },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#4A90E2",
-            opacity: 0.2,
-            width: 1,
-          },
-          move: {
-            enable: true,
-            speed: 1,
-            direction: "none",
-            random: true,
-            straight: false,
-          },
-        },
-        interactivity: {
-          detect_on: "canvas",
-          events: { onhover: { enable: true, mode: "grab" } },
-          modes: { grab: { distance: 200, line_linked: { opacity: 0.3 } } },
-        },
+  <!-- Experience -->
+  <section id="experience" class="section section--alt">
+    <div class="container">
+      <div class="section__label reveal">
+        <span class="section__num">02</span>
+        <span class="section__title">Experience</span>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline__item reveal">
+          <div class="timeline__meta">
+            <span class="timeline__date">Apr 2026 — Present</span>
+            <span class="timeline__type">Internship · Current</span>
+          </div>
+          <div class="timeline__body">
+            <h3 class="timeline__role">Product Analyst Intern</h3>
+            <p class="timeline__company">Semms Solutions · Aruppukottai</p>
+            <p class="timeline__desc">
+              Solely built and deployed S-Network, a full-scale SaaS platform for the construction industry (Angular 17 SSR + Flutter + Supabase). Now operating as analyst — tracking user behavior, lead conversion, AI agent performance, and system health across the live production app.
+            </p>
+            <div class="timeline__tags">
+              <span>Angular 17</span><span>Supabase</span><span>Claude API</span>
+              <span>Google Cloud</span><span>VPS</span><span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal delay-1">
+          <div class="timeline__meta">
+            <span class="timeline__date">Mar 2026 — Apr 2026</span>
+            <span class="timeline__type">Virtual Internship · IBM</span>
+          </div>
+          <div class="timeline__body">
+            <h3 class="timeline__role">Data Analytics & BI Intern</h3>
+            <p class="timeline__company">Adroit Technologies · IBM Naan Mudhalvan Program</p>
+            <p class="timeline__desc">
+              Completed hands-on BI training using IBM Cognos Analytics. Built dashboards, designed data models, tracked KPIs, and transformed raw datasets into structured business intelligence reports.
+            </p>
+            <div class="timeline__tags">
+              <span>IBM Cognos</span><span>BI Dashboards</span><span>Data Modeling</span><span>KPI Tracking</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal delay-2">
+          <div class="timeline__meta">
+            <span class="timeline__date">Jun 2024 — Aug 2024</span>
+            <span class="timeline__type">Internship · 3 months</span>
+          </div>
+          <div class="timeline__body">
+            <h3 class="timeline__role">Client Solutions & Data Analysis Intern</h3>
+            <p class="timeline__company">Semms Solutions · Aruppukottai</p>
+            <p class="timeline__desc">
+              Built a CRM web application with Angular, managed 15+ client accounts, handled sales & operations reporting, and participated in Agile sprint cycles with developers and UI/UX teams.
+            </p>
+            <div class="timeline__tags">
+              <span>Angular</span><span>CRM</span><span>Client Management</span><span>Agile</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education & Certs -->
+      <div class="certs reveal">
+        <h4 class="certs__heading">Education & Certifications</h4>
+        <div class="certs__list">
+          <div class="cert">
+            <span class="cert__year">2027</span>
+            <div class="cert__info">
+              <p class="cert__name">B.E. Computer Science Engineering</p>
+              <p class="cert__org">Government College of Engineering, Tirunelveli</p>
+            </div>
+          </div>
+          <div class="cert">
+            <span class="cert__year">2026</span>
+            <div class="cert__info">
+              <p class="cert__name">IBM Cognos Analytics — Data Analytics & BI</p>
+              <p class="cert__org">Adroit Technologies / IBM Naan Mudhalvan · Completed</p>
+            </div>
+          </div>
+          <div class="cert">
+            <span class="cert__year">2026</span>
+            <div class="cert__info">
+              <p class="cert__name">Anthropic AI Courses — Claude API & Multi-Agent Systems</p>
+              <p class="cert__org">Anthropic · In Progress</p>
+            </div>
+          </div>
+          <div class="cert">
+            <span class="cert__year">2026</span>
+            <div class="cert__info">
+              <p class="cert__name">Google Project Management Professional Certificate</p>
+              <p class="cert__org">Coursera / Google · In Progress</p>
+            </div>
+          </div>
+          <div class="cert">
+            <span class="cert__year">2024</span>
+            <div class="cert__info">
+              <p class="cert__name">Diploma in Information Technology</p>
+              <p class="cert__org">Sri Sowdambika Polytechnic College, Aruppukottai</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section__label reveal">
+        <span class="section__num">03</span>
+        <span class="section__title">Projects</span>
+      </div>
+
+      <!-- Featured -->
+      <div class="project-featured reveal">
+        <div class="project-featured__label">Featured — Live Production</div>
+        <div class="project-featured__inner">
+          <div class="project-featured__content">
+            <h3 class="project-featured__title">S-Network</h3>
+            <p class="project-featured__sub">Construction Industry Discovery Platform</p>
+            <p class="project-featured__desc">
+              A full-scale SaaS platform — the JustDial for construction — connecting homeowners and businesses with verified contractors and vendors. Built and deployed entirely solo. Features vendor approval gating, multi-auth (Email / OTP / Google OAuth), lead generation, category search, review system, and admin panel with full analytics.
+            </p>
+            <div class="project-featured__stack">
+              <span>Angular 17 SSR</span><span>Flutter</span><span>Supabase</span>
+              <span>PostgreSQL</span><span>Claude API</span><span>Nginx / VPS</span>
+              <span>Twilio</span><span>Google Cloud</span>
+            </div>
+            <div class="project-featured__highlights">
+              <div class="highlight">
+                <i class="fas fa-database"></i>
+                <span>Multi-table schema: businesses, leads, reviews, search_logs, auth</span>
+              </div>
+              <div class="highlight">
+                <i class="fas fa-robot"></i>
+                <span>Claude-based multi-agent AI integration with performance tracking</span>
+              </div>
+              <div class="highlight">
+                <i class="fas fa-chart-line"></i>
+                <span>Live production · Monitoring lead conversion & system health</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-featured__badge">
+            <div class="badge-ring">
+              <span>LIVE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Grid -->
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-card__num">01</div>
+          <h4 class="project-card__title">InsightIQ</h4>
+          <p class="project-card__sub">AI-Assisted EDA & ML Dashboard</p>
+          <p class="project-card__desc">Streamlit app automating exploratory data analysis with multi-model comparison (LR, RF, XGBoost) and SHAP-based explainability for non-technical business analysts.</p>
+          <div class="project-card__stack">
+            <span>Python</span><span>Streamlit</span><span>XGBoost</span><span>SHAP</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-1">
+          <div class="project-card__num">02</div>
+          <h4 class="project-card__title">AI Sales Insight Generator</h4>
+          <p class="project-card__sub">Business Intelligence Through Prompting</p>
+          <p class="project-card__desc">Processes sales CSV data and generates structured business insights via LLM prompts. Converts raw operational data into decision-ready outputs with minimal human effort.</p>
+          <div class="project-card__stack">
+            <span>Python</span><span>LLM API</span><span>Prompt Eng</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <div class="project-card__num">03</div>
+          <h4 class="project-card__title">AI Report Summarizer</h4>
+          <p class="project-card__sub">Structured KPI Extraction</p>
+          <p class="project-card__desc">Extracts KPIs, risks, and strategic insights from lengthy business reports using structured prompts with enforced JSON output — dramatically reducing executive review time.</p>
+          <div class="project-card__stack">
+            <span>Python</span><span>Streamlit</span><span>JSON Schema</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-1">
+          <div class="project-card__num">04</div>
+          <h4 class="project-card__title">Prompt Optimization Study</h4>
+          <p class="project-card__sub">Comparative Prompting Research</p>
+          <p class="project-card__desc">Rigorous comparison of zero-shot, few-shot, and structured prompting strategies across 5 business scenarios. Finding: structured prompts deliver highest consistency; few-shot improves domain relevance.</p>
+          <div class="project-card__stack">
+            <span>LLM API</span><span>Python</span><span>Research</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section--alt">
+    <div class="container">
+      <div class="section__label reveal">
+        <span class="section__num">04</span>
+        <span class="section__title">Contact</span>
+      </div>
+
+      <div class="contact__inner">
+        <div class="contact__left reveal">
+          <h2 class="contact__heading">Let's work<br /><em>together.</em></h2>
+          <p class="contact__sub">
+            Open to AI Analyst, Product Analyst, Data Analyst, and Business Analyst roles. Also open to internships at product-first companies.
+          </p>
+          <div class="contact__details">
+            <a href="mailto:aabithahmed453@gmail.com" class="contact__item">
+              <i class="fas fa-envelope"></i>
+              aabithahmed453@gmail.com
+            </a>
+            <a href="tel:+916382550569" class="contact__item">
+              <i class="fas fa-phone"></i>
+              +91 6382550569
+            </a>
+            <div class="contact__item">
+              <i class="fas fa-map-marker-alt"></i>
+              Tamil Nadu, India
+            </div>
+          </div>
+          <div class="contact__socials">
+            <a href="https://linkedin.com/in/aabith2004" target="_blank" class="contact__social">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/AabithAhmed" target="_blank" class="contact__social">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__right reveal delay-2">
+          <form class="contact__form" id="contactForm">
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label">Name</label>
+                <input type="text" class="form__input" placeholder="Your name" required />
+              </div>
+              <div class="form__group">
+                <label class="form__label">Email</label>
+                <input type="email" class="form__input" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label">Subject</label>
+              <input type="text" class="form__input" placeholder="What's this about?" />
+            </div>
+            <div class="form__group">
+              <label class="form__label">Message</label>
+              <textarea class="form__input form__textarea" placeholder="Tell me about the opportunity..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              Send Message <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">© 2026 Aabith. Z</p>
+        <p class="footer__stack">Built with intention · Tamil Nadu, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chatbot -->
+  <div class="chatbot" id="chatbot">
+    <button class="chatbot__toggle" id="chatToggle" aria-label="Open chat">
+      <i class="fas fa-comment-dots chatbot__icon-open"></i>
+      <i class="fas fa-times chatbot__icon-close"></i>
+    </button>
+    <div class="chatbot__panel" id="chatPanel">
+      <div class="chatbot__header">
+        <div class="chatbot__header-info">
+          <div class="chatbot__avatar">AZ</div>
+          <div>
+            <p class="chatbot__name">Ask about Aabith</p>
+            <p class="chatbot__powered">Powered by Claude</p>
+          </div>
+        </div>
+      </div>
+      <div class="chatbot__messages" id="chatMessages">
+        <div class="chat-msg chat-msg--bot">
+          <div class="chat-msg__content">
+            Hi! I can answer questions about Aabith's experience, projects, and skills. What would you like to know?
+          </div>
+        </div>
+      </div>
+      <div class="chatbot__chips" id="chatChips">
+        <button class="chip" data-q="What projects has Aabith built?">Projects</button>
+        <button class="chip" data-q="What is Aabith's experience?">Experience</button>
+        <button class="chip" data-q="What skills does Aabith have?">Skills</button>
+        <button class="chip" data-q="What roles is Aabith looking for?">Looking for</button>
+      </div>
+      <div class="chatbot__input-row">
+        <input type="text" class="chatbot__input" id="chatInput" placeholder="Ask something..." autocomplete="off" />
+        <button class="chatbot__send" id="chatSend">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  // ── NAV SCROLL ────────────────────────────────────────
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('nav--scrolled', window.scrollY > 50);
+  });
+
+  // ── BURGER ────────────────────────────────────────────
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+  document.querySelectorAll('.nav__link').forEach(l => {
+    l.addEventListener('click', () => {
+      burger.classList.remove('active');
+      navLinks.classList.remove('active');
+    });
+  });
+
+  // ── SCROLL REVEAL ─────────────────────────────────────
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('revealed');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ── CONTACT FORM ──────────────────────────────────────
+  document.getElementById('contactForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn = e.target.querySelector('button[type="submit"]');
+    btn.textContent = 'Message sent! ✓';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = 'Send Message <i class="fas fa-arrow-right"></i>';
+      btn.disabled = false;
+      e.target.reset();
+    }, 3000);
+  });
+
+  // ── CHATBOT ───────────────────────────────────────────
+  const context = `You are a helpful assistant on Aabith Z's portfolio website. Answer questions about Aabith based only on this information:
+
+Name: Aabith. Z
+Role: AI Product Analyst Intern at Semms Solutions (April 2026 – Present)
+Location: Tamil Nadu, India
+Email: aabithahmed453@gmail.com
+Phone: +91 6382550569
+LinkedIn: linkedin.com/in/aabith2004
+GitHub: github.com/AabithAhmed
+
+EXPERIENCE:
+1. Product Analyst Intern — Semms Solutions (April 2026 – Present)
+   - Solely built and deployed S-Network, a full-scale SaaS platform for the construction industry
+   - Managing PostgreSQL/Supabase database, Google OAuth, multi-agent Claude AI integration
+   - Deployment: Angular 17 SSR + Flutter + Supabase + VPS + Nginx + PM2
+   - Analyzing lead conversion, user behavior, AI agent performance
+   
+2. Data Analytics & BI Intern — Adroit Technologies / IBM Naan Mudhalvan (Mar–Apr 2026)
+   - IBM Cognos Analytics: dashboards, data modeling, KPI tracking, BI reporting
+
+3. Client Solutions & Data Analysis Intern — Semms Solutions (Jun–Aug 2024)
+   - Built CRM app with Angular, managed 15+ clients, Agile sprints
+
+PROJECTS:
+- S-Network: Live SaaS platform (Angular 17 + Flutter + Supabase + Claude API)
+- InsightIQ: ML dashboard (Python + Streamlit + XGBoost + SHAP)
+- AI Sales Insight Generator: LLM-powered sales analysis tool
+- AI Business Report Summarizer: Structured KPI extraction tool
+- Prompt Optimization Study: Research comparing prompting strategies
+
+SKILLS: Claude API, Multi-Agent AI, Prompt Engineering, PostgreSQL, Supabase, SQL, IBM Cognos, Python, Angular 17, Flutter, Node.js, Google Cloud, Vercel, Render, VPS, Nginx
+
+EDUCATION: B.E. Computer Science (Expected 2027) - Government College of Engineering Tirunelveli
+
+CERTIFICATIONS (In Progress): Anthropic AI Courses, Google Project Management (Coursera), Infosys Springboard Gen AI Track. Completed: IBM Cognos Analytics
+
+LOOKING FOR: AI Analyst, Product Analyst, Data Analyst, Business Analyst, AI Systems Analyst roles. Open to both internships and full-time.
+
+Be concise, professional, and accurate. If asked something not covered, say you don't have that info and suggest contacting Aabith directly.`;
+
+  const toggle = document.getElementById('chatToggle');
+  const panel = document.getElementById('chatPanel');
+  const input = document.getElementById('chatInput');
+  const send = document.getElementById('chatSend');
+  const messages = document.getElementById('chatMessages');
+  const chips = document.getElementById('chatChips');
+
+  toggle.addEventListener('click', () => {
+    document.getElementById('chatbot').classList.toggle('chatbot--open');
+  });
+
+  function addMsg(text, role) {
+    const div = document.createElement('div');
+    div.className = `chat-msg chat-msg--${role}`;
+    const content = document.createElement('div');
+    content.className = 'chat-msg__content';
+    content.textContent = text;
+    div.appendChild(content);
+    messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
+    return div;
+  }
+
+  function addTyping() {
+    const div = document.createElement('div');
+    div.className = 'chat-msg chat-msg--bot chat-msg--typing';
+    div.innerHTML = '<div class="chat-msg__content"><span></span><span></span><span></span></div>';
+    messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
+    return div;
+  }
+
+  async function sendMessage(question) {
+    if (!question.trim()) return;
+    addMsg(question, 'user');
+    chips.style.display = 'none';
+    input.value = '';
+    const typing = addTyping();
+
+    try {
+      const res = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'claude-sonnet-4-20250514',
+          max_tokens: 300,
+          system: context,
+          messages: [{ role: 'user', content: question }]
+        })
       });
+      const data = await res.json();
+      typing.remove();
+      const reply = data.content?.[0]?.text || "Sorry, I couldn't get a response. Try emailing Aabith directly.";
+      addMsg(reply, 'bot');
+    } catch {
+      typing.remove();
+      addMsg("Connection issue. Please email aabithahmed453@gmail.com directly.", 'bot');
+    }
+  }
 
-      // GROQ API CHATBOT - GITHUB SAFE
-      // ⚠️ API KEY IS HIDDEN FOR GITHUB UPLOAD
-      const GROQ_API_KEY = ""; 
+  send.addEventListener('click', () => sendMessage(input.value));
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') sendMessage(input.value); });
+  document.querySelectorAll('.chip').forEach(c => {
+    c.addEventListener('click', () => sendMessage(c.dataset.q));
+  });
 
-      // Portfolio context for the AI
-      const portfolioContext = {
-        name: "Aabith Ahmed",
-        role: "Generative AI Analyst (Early Career)",
-        summary:
-          "Analytical professional with experience in client solutions, data analysis, and operational reporting. Currently expanding expertise in generative AI through structured learning and applied projects.",
-        experience: {
-          company: "Semms Solutions",
-          role: "Client Solutions & Data Analysis Intern",
-          duration: "2024",
-          responsibilities: [
-            "Managed coordination for 15 client accounts",
-            "Handled sales & operations reporting",
-            "Analyzed data to identify performance trends",
-            "Prepared structured client reports",
-            "Translated business requirements to technical tasks",
-          ],
-          tools: ["Excel", "Spreadsheets", "Manual Analysis"],
-        },
-        skills: {
-          analytical: [
-            "Client requirements analysis",
-            "Sales & operations reporting",
-            "Performance trend identification",
-            "Structured report preparation",
-            "Business-to-technical translation",
-          ],
-          ai: [
-            "Prompt engineering & structuring",
-            "LLM API integration",
-            "Model comparison fundamentals",
-            "JSON output enforcement",
-            "AI ethics & responsible AI",
-          ],
-          technical: [
-            "Python (intermediate)",
-            "Streamlit development",
-            "Spreadsheet analysis",
-            "AI-assisted development",
-            "Basic model evaluation",
-          ],
-        },
-        projects: [
-          {
-            name: "InsightIQ",
-            description: "AI-Assisted EDA & Model Prototyping Tool",
-            details:
-              "Streamlit app automating EDA with multi-model comparison (LR, RF, XGBoost) and SHAP explanations.",
-            technologies: [
-              "Python",
-              "Streamlit",
-              "scikit-learn",
-              "pandas",
-              "SHAP",
-            ],
-          },
-          {
-            name: "AI Sales Insight Generator",
-            description: "Business Intelligence Through Prompting",
-            details:
-              "Tool processes sales CSV data and generates structured insights using LLM prompts - revenue trends, segment performance, recommendations.",
-            technologies: ["Python", "Streamlit", "LLM API", "pandas", "JSON"],
-          },
-          {
-            name: "Prompt Optimization Study",
-            description: "Comparative Analysis of Prompting Strategies",
-            details:
-              "Compared zero-shot, few-shot, and structured prompts across 5 business scenarios. Found structured prompts most consistent.",
-            technologies: [
-              "LLM API",
-              "Python",
-              "Jupyter",
-              "Qualitative Analysis",
-            ],
-          },
-          {
-            name: "AI Business Report Summarizer",
-            description: "Structured Information Extraction",
-            details:
-              "Extracts KPIs, risks, and insights from business reports using structured prompts with JSON output enforcement and validation.",
-            technologies: ["Python", "Streamlit", "LLM API", "JSON Schema"],
-          },
-        ],
-        education: {
-          current:
-            "Infosys Springboard - Generative AI Learning Track (Currently Enrolled)",
-          areas: [
-            "Generative AI fundamentals",
-            "LLM architecture basics",
-            "Prompt engineering techniques",
-            "AI ethics & responsible AI",
-            "Basic model evaluation",
-          ],
-          selfDirected: [
-            "Python for data analysis",
-            "Streamlit documentation",
-            "LLM API integration guides",
-            "Prompt engineering best practices",
-          ],
-        },
-        careerVision:
-          "Seeking an entry-level Generative AI Analyst or AI Solutions Analyst role focusing on prompt design, small-scale AI tools, and business translation.",
-      };
-
-      // System prompt for the AI
-      const systemPrompt = `You are a helpful AI assistant for Aabith Ahmed's portfolio website. 
-        Your role is to answer questions about Aabith's professional background, skills, projects, and experience.
-        Be concise, professional, and accurate. Only provide information that is in the context provided.
-        If asked something not in the context, politely say you don't have that information.
-        
-        Here is the context about Aabith:
-        ${JSON.stringify(portfolioContext, null, 2)}`;
-
-      // Chatbot functionality
-      document.addEventListener("DOMContentLoaded", function () {
-        const chatMessages = document.getElementById("chatMessages");
-        const userInput = document.getElementById("userInput");
-        const sendButton = document.getElementById("sendMessage");
-        const chatToggle = document.querySelector(".chatbot-toggle");
-        const chatContainer = document.querySelector(".chatbot-container");
-        const chatClose = document.querySelector(".chatbot-close");
-        const suggestionChips = document.querySelectorAll(".suggestion-chip");
-
-        // Toggle chat
-        chatToggle.addEventListener("click", () => {
-          chatContainer.classList.toggle("active");
-        });
-
-        chatClose.addEventListener("click", () => {
-          chatContainer.classList.remove("active");
-        });
-
-        // Send message function
-        async function sendMessage() {
-          const message = userInput.value.trim();
-          if (!message) return;
-
-          // Add user message to chat
-          addMessage(message, "user");
-          userInput.value = "";
-
-          // Show typing indicator
-          showTypingIndicator();
-
-          try {
-            // Check for API Key presence before calling
-            if (!GROQ_API_KEY || GROQ_API_KEY === "") {
-               removeTypingIndicator();
-               addMessage(
-                 "⚠️ API Key missing. For security, the key is hidden on GitHub. Please see the code comments to enable it locally.",
-                 "bot"
-               );
-               return;
-            }
-
-            // Call Groq API
-            const response = await callGroqAPI(message);
-
-            // Remove typing indicator
-            removeTypingIndicator();
-
-            // Add bot response
-            addMessage(response, "bot");
-          } catch (error) {
-            console.error("Error:", error);
-            removeTypingIndicator();
-            addMessage(
-              "Sorry, I encountered an error. Please try again.",
-              "bot"
-            );
-          }
-        }
-
-        // Call Groq API
-        async function callGroqAPI(userMessage) {
-          const messages = [
-            { role: "system", content: systemPrompt },
-            { role: "user", content: userMessage },
-          ];
-
-          try {
-            const response = await fetch(
-              "https://api.groq.com/openai/v1/chat/completions",
-              {
-                method: "POST",
-                headers: {
-                  Authorization: `Bearer ${GROQ_API_KEY}`,
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                  model: "llama-3.3-70b-versatile",
-                  messages: messages,
-                  temperature: 0.7,
-                  max_tokens: 500,
-                }),
-              }
-            );
-
-            if (!response.ok) {
-              throw new Error(`API request failed: ${response.status}`);
-            }
-
-            const data = await response.json();
-            return data.choices[0].message.content;
-          } catch (error) {
-            console.error("Groq API error:", error);
-            throw error;
-          }
-        }
-
-        // Add message to chat
-        function addMessage(text, sender) {
-          const messageDiv = document.createElement("div");
-          messageDiv.classList.add("message", sender);
-
-          const contentDiv = document.createElement("div");
-          contentDiv.classList.add("message-content");
-          contentDiv.textContent = text;
-
-          messageDiv.appendChild(contentDiv);
-          chatMessages.appendChild(messageDiv);
-
-          // Scroll to bottom
-          chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
-
-        // Show typing indicator
-        function showTypingIndicator() {
-          const indicator = document.createElement("div");
-          indicator.classList.add("typing-indicator");
-          indicator.id = "typingIndicator";
-
-          for (let i = 0; i < 3; i++) {
-            const dot = document.createElement("span");
-            indicator.appendChild(dot);
-          }
-
-          chatMessages.appendChild(indicator);
-          chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
-
-        // Remove typing indicator
-        function removeTypingIndicator() {
-          const indicator = document.getElementById("typingIndicator");
-          if (indicator) {
-            indicator.remove();
-          }
-        }
-
-        // Event listeners
-        sendButton.addEventListener("click", sendMessage);
-
-        userInput.addEventListener("keypress", (e) => {
-          if (e.key === "Enter") {
-            sendMessage();
-          }
-        });
-
-        // Suggestion chips
-        suggestionChips.forEach((chip) => {
-          chip.addEventListener("click", () => {
-            userInput.value = chip.textContent;
-            sendMessage();
-          });
-        });
-
-        // Mobile menu
-        const menuBtn = document.querySelector(".menu-btn");
-        const navLinks = document.querySelector(".nav-links");
-
-        if (menuBtn) {
-          menuBtn.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-          });
-        }
-
-        // Project toggles
-        document.querySelectorAll(".project-toggle").forEach((btn) => {
-          btn.addEventListener("click", function (e) {
-            e.stopPropagation();
-            const card = this.closest(".project-card");
-            const isExpanded = card.classList.contains("expanded");
-
-            // Close all other cards
-            document
-              .querySelectorAll(".project-card.expanded")
-              .forEach((expandedCard) => {
-                if (expandedCard !== card) {
-                  expandedCard.classList.remove("expanded");
-                }
-              });
-
-            // Toggle current card
-            card.classList.toggle("expanded");
-
-            // Rotate chevron
-            const chevron = this.querySelector(".fas.fa-chevron-down");
-            if (chevron) {
-              chevron.style.transform = isExpanded
-                ? "rotate(0deg)"
-                : "rotate(180deg)";
-            }
-          });
-        });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-          anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute("href"));
-            if (target) {
-              target.scrollIntoView({ behavior: "smooth" });
-              navLinks.classList.remove("active");
-            }
-          });
-        });
-
-        // Contact form
-        const contactForm = document.getElementById("contactForm");
-        if (contactForm) {
-          contactForm.addEventListener("submit", (e) => {
-            e.preventDefault();
-            alert("Thank you for your message! This is a demo form.");
-            contactForm.reset();
-          });
-        }
-      });
-    </script>
-  </body>
+  // ── ACTIVE NAV ────────────────────────────────────────
+  const sections = document.querySelectorAll('section[id]');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 120) current = s.id;
+    });
+    document.querySelectorAll('.nav__link').forEach(l => {
+      l.classList.toggle('nav__link--active', l.getAttribute('href') === `#${current}`);
+    });
+  });
+  </script>
+</body>
 </html>
